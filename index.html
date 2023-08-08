@@ -7,35 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navigate">
-      <div class="container">
-        <div class="logo">
-          <img src="images/navigation-menu.svg" alt="" />
-          <p class="constructor">Constructor</p>
-        </div>
-      </div>
-      <nav class="navbar">
-        <ul class="navbar-menu">
-          <li class="navbar-menu-item">
+    <header class="header">
+      <a href="#" class="button">
+        <img src="images/navigation-menu.svg" alt="" />
+      </a>
+      <p class="header-logo">Constructor</p>
+      <nav class="header-navbar">
+        <ul class="header-navbar-list">
+          <li class="header-navbar-item">
             <a href="#">Dashboard</a>
           </li>
-          <li class="navbar-menu-item">
+          <li class="header-navbar-item">
             <a href="#">About Us</a>
           </li>
-          <li class="navbar-menu-item">
+          <li class="header-navbar-item">
             <a href="#">News</a>
           </li>
-          <li class="navbar-menu-item">
+          <li class="header-navbar-item">
             <a href="#">User Policy</a>
           </li>
-          <li class="navbar-menu-item">
+          <li class="header-navbar-item">
             <a href="#">Contacts</a>
           </li>
-          <li class="navbar-icon">
-            <a href="#"
-              ><img src="images/navigation-more-horiz.svg" alt=""
-            /></a>
-          </li>
+          <a href="#" class="navbar-icon"
+            ><img src="images/navigation-more-horiz.svg" alt=""
+          /></a>
         </ul>
       </nav>
       <form role="search" class="search-container">
@@ -52,33 +48,259 @@
       </form>
       <div class="account">
         <div class="user">
-          <img src="images/account-circle.png" alt="" />
+          <img class="account-photo" src="images/account-circle.png" alt="" />
           <p class="account-name">Clayton Santos</p>
         </div>
-        <a href="#" class="button active"></a>
-        <a href="#" class="button cancel"></a>
+      </div>
+      <div class="header-buttons">
+        <a href="#" class="button active">
+          <img src="images/social-icon.svg" alt=""
+        /></a>
+        <a href="#" class="button cancel">
+          <img src="images/cancel-icon.svg" alt=""
+        /></a>
       </div>
     </header>
-    <aside class="menu">
-      <div class="menu-top">
-        <div class="buttons avatar">
-          <a href="#" class="button explore"></a>
-          <a href="#" class="button star"></a>
-          <a href="#" class="button active messanger"></a>
-          <a href="#" class="button trend"></a>
-          <a href="#" class="button earth"></a>
-          <a href="#" class="button location"></a>
+    <section class="content">
+      <aside class="menu">
+        <div class="menu-top">
+          <div class="buttons">
+            <a href="#" class="button explore"
+              ><img src="images/explore-icon.svg" alt=""
+            /></a>
+            <a href="#" class="button star"
+              ><img src="images/star-icon.svg" alt=""
+            /></a>
+            <a href="#" class="button active messanger"
+              ><img src="images/messanger-icon.svg" alt=""
+            /></a>
+            <a href="#" class="button trend"
+              ><img src="images/trend-icon.svg" alt=""
+            /></a>
+            <a href="#" class="button earth"
+              ><img src="images/earth-icon.svg" alt=""
+            /></a>
+            <a href="#" class="button location"
+              ><img src="images/location-icon.svg" alt=""
+            /></a>
+          </div>
         </div>
-      </div>
-      <div class="menu-bottom">
-        <div class="buttons">
-          <a href="#" class="avatar active avatar1"></a>
-          <a href="#" class="avatar avatar2"></a>
-          <a href="#" class="avatar avatar3"></a>
-          <a href="#" class="avatar avatar4"></a>
-          <a href="#" class="avatar avatar-add"></a>
+        <div class="menu-bottom">
+          <div class="buttons">
+            <a href="#" class="avatar active"
+              ><img src="images/avatar1.png" alt=""
+            /></a>
+            <a href="#" class="avatar"
+              ><img src="images/avatar2.png" alt=""
+            /></a>
+            <a href="#" class="avatar"
+              ><img src="images/avatar3.png" alt=""
+            /></a>
+            <a href="#" class="avatar"
+              ><img src="images/avatar4.png" alt=""
+            /></a>
+            <a href="#" class="button"
+              ><img src="images/avatar-add.svg" alt=""
+            /></a>
+          </div>
         </div>
-      </div>
-    </aside>
+      </aside>
+      <article class="content-inner">
+        <div class="inner-column1">
+          <div class="credit-cards">
+            <img src="images/credit-card.png" alt="" />
+            <div class="credit-cards-column">
+              <img class="card" src="images/card1.png" alt="" />
+              <img class="card active" src="images/card2.png" alt="" />
+              <img class="card" src="images/card3.png" alt="" />
+            </div>
+          </div>
+          <div class="expenses">
+            <div class="expenses-head">
+              <a class="button" href="#">
+                <img src="images/expenses-head-icon.svg" alt=""
+              /></a>
+              <ul class="expenses-navbar">
+                <li class="expenses-navbar-item">
+                  <a href="#">Your Expenses</a>
+                </li>
+                <li class="expenses-navbar-item">
+                  <a href="#"> Receipts to the account</a>
+                </li>
+              </ul>
+              <a class="button" href="#"
+                ><img src="images/navigation-more-horiz.svg" alt=""
+              /></a>
+            </div>
+            <div class="expenses-content">
+              <img src="images/chart.png" alt="" />
+              <div class="expenses-buttons" href="#">
+                <div class="row">
+                  <a class="expenses-button" href="#">
+                    <img src="images/mood.svg" alt="" />Entertainment 400$
+                  </a>
+                  <a class="expenses-button" href="#">
+                    <img src="images/shopping.svg" alt="" />Supermarkets 340$
+                  </a>
+                </div>
+                <div class="row">
+                  <a class="expenses-button" href="#">
+                    <img src="images/fastfood.svg" alt="" />Fast Food 240$
+                  </a>
+                  <a class="expenses-button" href="#">
+                    <img src="images/hospital.svg" alt="" />Pharmacies 140$
+                  </a>
+                </div>
+                <div class="row">
+                  <a class="expenses-button" href="#">
+                    <img src="images/phone.svg" alt="" /> Mobile Connection 30$
+                  </a>
+                  <a class="expenses-button" href="#">
+                    <img src="images/gas-station.svg" alt="" />Fuel 540$
+                  </a>
+                </div>
+                <div class="row">
+                  <a class="expenses-button" href="#">
+                    <img src="images/fitness.svg" alt="" />Fitness 240$
+                  </a>
+                  <a class="expenses-button" href="#">
+                    <img src="images/cafe.svg" alt="" />Cafe 140$
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-column2">
+          <div class="operation">
+            <div class="operation-head">
+              <a class="button" href="#">
+                <img src="images/swap-vert.svg" alt=""
+              /></a>
+              <ul class="operation-navbar">
+                <li class="operation-navbar-item">
+                  <a href="#">Recent Operations</a>
+                </li>
+                <li class="operation-navbar-item">
+                  <a href="#">Income</a>
+                </li>
+                <li class="operation-navbar-item">
+                  <a href="#">Costs</a>
+                </li>
+              </ul>
+              <a class="button" href="#"
+                ><img src="images/navigation-more-horiz.svg" alt=""
+              /></a>
+            </div>
+            <div class="operation-rows">
+              <div class="operation-row">
+                <img src="images/starbucks.png" alt="" />
+                <span class="operation-name">Starbucks Corporatio</span>
+                <span class="operation-process">Buying Coffee</span>
+                <span class="cashback">+$10 Cashback</span>
+                <span class="badge">-$70</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/walmart.png" alt="" />
+                <span class="operation-name">Walmart, Inc.</span>
+                <span class="operation-process">Shopping Wallmart</span>
+                <span class="empty"></span>
+                <span class="badge">-$90</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/netflix.png" alt="" />
+                <span class="operation-name">Netflix</span>
+                <span class="operation-process">Netflix Subscriptions</span>
+                <span class="cashback">+$10 Cashback</span>
+                <span class="badge">-$90</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/apple.png" alt="" />
+                <span class="operation-name">Apple</span>
+                <span class="operation-process">Shopping at Nike Store</span>
+                <span class="cashback">+$8 Cashback</span>
+                <span class="badge">-$90</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/nike.png" alt="" />
+                <span class="operation-name">Nike, Inc.</span>
+                <span class="operation-process">Shopping at Nike Store</span>
+                <span class="empty"></span>
+                <span class="badge">-$90</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/walmart.png" alt="" />
+                <span class="operation-name">Walmart, Inc.</span>
+                <span class="operation-process">Shopping at Nike Store</span>
+                <span class="cashback">+$22 Cashback</span>
+                <span class="badge">-$90</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+              <div class="operation-row">
+                <img src="images/starbucks.png" alt="" />
+                <span class="operation-name">Starbucks Corporatio</span>
+                <span class="operation-process">Buying Coffee</span>
+                <span class="cashback">+$10 Cashback</span>
+                <span class="badge">-$70</span>
+                <a class="button" href="#"
+                  ><img src="images/navigation-more-horiz.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="info-boxes">
+            <div class="info-card">
+              <img src="images/internet-icon.png" alt="" />
+              <p class="info-card-name">Internet</p>
+            </div>
+            <div class="info-card">
+              <img src="images/mobil-icon.png" alt="" />
+              <p class="info-card-name">Mobile</p>
+            </div>
+            <div class="transfer-card">
+              <p class="transfer-card-name">Transfer Money to Organizations</p>
+              <div class="transfer-organization">
+                <img src="images/twitter-icon.png" alt="" />
+                <img src="images/message-icon.png" alt="" />
+                <img src="images/drive-icon.png" alt="" />
+              </div>
+            </div>
+            <div class="transfer-card">
+              <p class="transfer-card-name">Transfer Money to People</p>
+              <div class="transfer-organization">
+                <img src="images/avatar5.png" alt="" />
+                <img src="images/avatar6.png" alt="" />
+                <img src="images/avatar7.png" alt="" />
+              </div>
+            </div>
+            <div class="info-card">
+              <img src="images/video-icon.png" alt="" />
+              <p class="info-card-name">Video Content</p>
+            </div>
+            <div class="info-card">
+              <img src="images/game-icon.png" alt="" />
+              <p class="info-card-name">Game Content</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
   </body>
 </html>
