@@ -8,10 +8,12 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="button">
-        <img src="images/navigation-menu.svg" alt="" />
-      </a>
-      <p class="header-logo">Constructor</p>
+      <div class="logo">
+        <a href="#" class="button">
+          <img src="images/navigation-menu.svg" alt="" />
+        </a>
+        <p class="header-logo">Constructor</p>
+      </div>
       <nav class="header-navbar">
         <ul class="header-navbar-list">
           <li class="header-navbar-item">
@@ -110,9 +112,11 @@
           <div class="credit-cards">
             <img src="images/credit-card.png" alt="" />
             <div class="credit-cards-column">
-              <img class="card" src="images/card1.png" alt="" />
-              <img class="card active" src="images/card2.png" alt="" />
-              <img class="card" src="images/card3.png" alt="" />
+              <div class="card"><img src="images/card1.png" alt="" /></div>
+              <div class="card active">
+                <img src="images/card2.png" alt="" />
+              </div>
+              <div class="card"><img src="images/card3.png" alt="" /></div>
             </div>
           </div>
           <div class="expenses">
@@ -121,7 +125,7 @@
                 <img src="images/expenses-head-icon.svg" alt=""
               /></a>
               <ul class="expenses-navbar">
-                <li class="expenses-navbar-item">
+                <li class="expenses-navbar-item active">
                   <a href="#">Your Expenses</a>
                 </li>
                 <li class="expenses-navbar-item">
@@ -175,8 +179,8 @@
           <div class="operation">
             <div class="operation-head">
               <a class="button" href="#">
-                <img src="images/swap-vert.svg" alt=""
-              /></a>
+                <img src="images/swap-vert.svg" alt="" />
+              </a>
               <ul class="operation-navbar">
                 <li class="operation-navbar-item">
                   <a href="#">Recent Operations</a>
@@ -188,84 +192,112 @@
                   <a href="#">Costs</a>
                 </li>
               </ul>
-              <a class="button" href="#"
-                ><img src="images/navigation-more-horiz.svg" alt=""
-              /></a>
+              <a class="button" href="#">
+                <img src="images/navigation-more-horiz.svg" alt="" />
+              </a>
             </div>
             <div class="operation-rows">
               <div class="operation-row">
                 <img src="images/starbucks.png" alt="" />
-                <span class="operation-name">Starbucks Corporatio</span>
-                <span class="operation-process">Buying Coffee</span>
-                <span class="cashback">+$10 Cashback</span>
-                <span class="badge">-$70</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Starbucks Corporation</span>
+                  <span class="operation-process">Buying Coffee</span>
+                  <div class="operation-amounts">
+                    <span class="cashback">+$10 Cashback</span>
+                    <span class="badge">-$70</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/walmart.png" alt="" />
-                <span class="operation-name">Walmart, Inc.</span>
-                <span class="operation-process">Shopping Wallmart</span>
-                <span class="empty"></span>
-                <span class="badge">-$90</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Walmart, Inc.</span>
+                  <span class="operation-process">Shopping Walmart</span>
+                  <div class="operation-amounts">
+                    <span class="empty"></span>
+                    <span class="badge">-$90</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/netflix.png" alt="" />
-                <span class="operation-name">Netflix</span>
-                <span class="operation-process">Netflix Subscriptions</span>
-                <span class="cashback">+$10 Cashback</span>
-                <span class="badge">-$90</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Netflix</span>
+                  <span class="operation-process">Netflix Subscriptions</span>
+                  <div class="operation-amounts">
+                    <span class="cashback">+$10 Cashback</span>
+                    <span class="badge">-$90</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/apple.png" alt="" />
-                <span class="operation-name">Apple</span>
-                <span class="operation-process">Shopping at Nike Store</span>
-                <span class="cashback">+$8 Cashback</span>
-                <span class="badge">-$90</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Apple</span>
+                  <span class="operation-process">Shopping at Nike Store</span>
+                  <div class="operation-amounts">
+                    <span class="cashback">+$8 Cashback</span>
+                    <span class="badge">-$90</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/nike.png" alt="" />
-                <span class="operation-name">Nike, Inc.</span>
-                <span class="operation-process">Shopping at Nike Store</span>
-                <span class="empty"></span>
-                <span class="badge">-$90</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Nike, Inc.</span>
+                  <span class="operation-process">Shopping at Nike Store</span>
+                  <div class="operation-amounts">
+                    <span class="empty"></span>
+                    <span class="badge">-$90</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/walmart.png" alt="" />
-                <span class="operation-name">Walmart, Inc.</span>
-                <span class="operation-process">Shopping at Nike Store</span>
-                <span class="cashback">+$22 Cashback</span>
-                <span class="badge">-$90</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Walmart, Inc.</span>
+                  <span class="operation-process">Shopping at Nike Store</span>
+                  <div class="operation-amounts">
+                    <span class="cashback">+$22 Cashback</span>
+                    <span class="badge">-$90</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
               <div class="operation-row">
                 <img src="images/starbucks.png" alt="" />
-                <span class="operation-name">Starbucks Corporatio</span>
-                <span class="operation-process">Buying Coffee</span>
-                <span class="cashback">+$10 Cashback</span>
-                <span class="badge">-$70</span>
-                <a class="button" href="#"
-                  ><img src="images/navigation-more-horiz.svg" alt=""
-                /></a>
+                <div class="operation-details">
+                  <span class="operation-name">Starbucks Corporation</span>
+                  <span class="operation-process">Buying Coffee</span>
+                  <div class="operation-amounts">
+                    <span class="cashback">+$10 Cashback</span>
+                    <span class="badge">-$70</span>
+                  </div>
+                </div>
+                <a class="button" href="#">
+                  <img src="images/navigation-more-horiz.svg" alt="" />
+                </a>
               </div>
             </div>
           </div>
-          <div class="info-boxes">
+          <div class="info-boxes-line">
             <div class="info-card">
               <img src="images/internet-icon.png" alt="" />
               <p class="info-card-name">Internet</p>
@@ -301,6 +333,96 @@
           </div>
         </div>
       </article>
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <div class="sidebar-content-top">
+            <div class="sidebar-content-head">
+              <img src="images/person-icon.svg" alt="" />
+              <img src="images/navigation-more-horiz.svg" alt="" />
+            </div>
+            <img src="images/column3-avatar.png" alt="" />
+            <p class="sidebar-text">Clayton Santos</p>
+          </div>
+          <div class="sidebar-cards">
+            <div class="sidebar-cards-head">
+              <span class="sidebar-cards-text"> Accounts and Cards </span>
+              <a href="#">
+                <img src="images/navigation-more-horiz.svg" alt="" />
+              </a>
+            </div>
+            <div class="sidebar-small-cards">
+              <div class="small-card">
+                <div class="small-card-left">
+                  <img src="images/small-card1.png" alt="" />
+                  <div class="small-span-text">
+                    <p class="small-card-name">Master Card</p>
+                    <p class="small-card-balance">4 560 $</p>
+                  </div>
+                </div>
+              </div>
+              <div class="small-card">
+                <div class="small-card-left">
+                  <img src="images/small-card2.png" alt="" />
+                  <div class="small-span-text">
+                    <p class="small-card-name">Master Card</p>
+                    <p class="small-card-balance">1 120 $</p>
+                  </div>
+                </div>
+              </div>
+              <div class="small-card">
+                <div class="small-card-left">
+                  <img src="images/small-card3.png" alt="" />
+                  <div class="small-span-text">
+                    <p class="small-card-name">Visa Black Card</p>
+                    <p class="small-card-balance">345 $</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-settings">
+            <div class="sidebar-settings-head">
+              <span class="settings-head-text">Settings</span>
+              <a href="#">
+                <img src="images/navigation-more-horiz.svg" alt="" />
+              </a>
+            </div>
+            <div class="sidebar-settings-content">
+              <div class="setting-rows">
+                <div class="setting-row">
+                  <a href="#" class="button">
+                    <img src="images/person-icon.svg" alt="" />
+                  </a>
+                  <span class="setting-row-text">Personal information</span>
+                </div>
+                <div class="setting-row">
+                  <a href="#" class="button">
+                    <img src="images/assignment-icon.svg" alt=""
+                  /></a>
+                  <span class="setting-row-text">Documents and Refere</span>
+                </div>
+                <div class="setting-row">
+                  <a href="#" class="button">
+                    <img src="images/lock-icon.svg" alt=""
+                  /></a>
+                  <span class="setting-row-text">Security & Codes</span>
+                </div>
+                <div class="setting-row">
+                  <a href="#" class="button">
+                    <img src="images/settings-icon.svg" alt=""
+                  /></a>
+                  <span class="setting-row-text">Account settings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-help">
+          <img src="images/attention.png" alt="" />
+          <p class="need-help">Do you need help?</p>
+          <p class="my-bank">1-800-MY-BANK</p>
+        </div>
+      </aside>
     </section>
   </body>
 </html>
