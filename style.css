@@ -29,6 +29,15 @@ a {
   border-bottom: 2px solid #edeff2;
 }
 
+@media (max-width: 1499px) {
+  .header {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .button {
   display: flex;
   padding: 10px;
@@ -125,7 +134,14 @@ a {
   display: flex;
   gap: 10px;
 }
-
+.header-buttons .button.person {
+  display: none;
+}
+@media (max-width: 1499px) {
+  .header-buttons .button.person {
+    display: flex;
+  }
+}
 .button.active::after {
   content: "";
   width: 10px;
@@ -148,30 +164,37 @@ a {
 
 .content {
   display: flex;
-  align-items: center;
-  gap: 30px;
-  align-self: stretch;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1499px) {
     display: flex;
     padding: 0px 45px;
     align-items: center;
     gap: 30px;
-    align-self: stretch;
   }
 }
 
 .menu {
   display: flex;
-  padding: 30px 25px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 280px;
+  height: calc(100vh - 92px);
+  padding: 30px 25px;
   border-right: 2px solid #edeff2;
+}
 
-  @media (max-width: 1200px) {
-    display: none;
+@media (max-width: 1499px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(38, 51, 77, 0.05);
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  .sidebar.active {
+    transform: translateX(0);
   }
 }
 
@@ -196,7 +219,8 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  flex: 1 0 0;
+  flex: 1;
+  padding: 30px;
 }
 
 .inner-column1 {
@@ -493,17 +517,26 @@ a {
 }
 
 .info-boxes-line {
-  display: grid;
-  grid-template-columns: repeat(3, 1.5fr);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.info-boxes-line-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
   gap: 30px;
 }
 
 .info-card {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 35px;
   padding: 27px;
-  align-items: center;
+  width: 100%;
+  max-width: 160px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.05);
@@ -517,14 +550,18 @@ a {
 }
 
 .transfer-card {
-  display: grid;
-  place-items: center;
-  padding: 30px;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
+  width: 100%;
+  padding: 30px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.05);
+}
+.two-column {
+  grid-column: 3 / 5;
 }
 
 .transfer-card-name {
@@ -544,6 +581,7 @@ a {
 .sidebar {
   display: flex;
   width: 100%;
+  max-width: 330px;
   height: 100%;
   padding: 30px 0px;
   flex-direction: column;
@@ -551,9 +589,20 @@ a {
   align-items: center;
   gap: 30px;
   border-left: 2px solid #edeff2;
+}
 
-  @media (max-width: 1200px) {
-    display: none;
+@media (max-width: 1499px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(38, 51, 77, 0.05);
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+  .sidebar.active {
+    transform: translateX(0);
   }
 }
 
