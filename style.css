@@ -29,10 +29,12 @@ a {
   border-bottom: 2px solid #edeff2;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 800px) {
   .header {
     display: flex;
-    padding: 25px;
+    width: 100%;
+    height: 100px;
+    padding: 0px 25px;
     justify-content: space-between;
     align-items: center;
   }
@@ -78,10 +80,22 @@ a {
   gap: 30px;
 }
 
+@media (max-width: 1188px) {
+  .header-navbar-list {
+    display: none;
+  }
+}
+
 .search-input-container {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+@media (max-width: 1518px) {
+  .search-input-container {
+    display: none;
+  }
 }
 
 .search-button {
@@ -118,6 +132,12 @@ a {
   gap: 15px;
 }
 
+@media (max-width: 800px) {
+  .user {
+    display: none;
+  }
+}
+
 .account-photo {
   max-width: 30px;
   max-height: 30px;
@@ -134,14 +154,34 @@ a {
   display: flex;
   gap: 10px;
 }
+
 .header-buttons .button.person {
   display: none;
+  margin: 0 0 auto auto;
 }
-@media (max-width: 1499px) {
+
+@media (max-width: 1518px) {
   .header-buttons .button.person {
     display: flex;
   }
 }
+
+.header-buttons .button.search {
+  display: none;
+}
+
+@media (max-width: 1518px) {
+  .header-buttons .button.search {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-buttons .button.search {
+    display: none;
+  }
+}
+
 .button.active::after {
   content: "";
   width: 10px;
@@ -155,6 +195,18 @@ a {
   right: 0;
 }
 
+@media (max-width: 800px) {
+  .button.cancel {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .button.social {
+    display: none;
+  }
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -164,12 +216,32 @@ a {
 
 .content {
   display: flex;
+}
 
-  @media (max-width: 1499px) {
+@media (max-width: 1518px) {
+  .content {
     display: flex;
     padding: 0px 45px;
     align-items: center;
     gap: 30px;
+  }
+
+  @media (max-width: 1188px) {
+    .content {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
   }
 }
 
@@ -178,12 +250,13 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
   height: calc(100vh - 92px);
   padding: 30px 25px;
   border-right: 2px solid #edeff2;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1518px) {
   .menu {
     position: fixed;
     top: 0;
@@ -217,10 +290,26 @@ a {
 
 .content-inner {
   display: flex;
-  align-items: flex-start;
   gap: 30px;
   flex: 1;
   padding: 30px;
+}
+
+@media (max-width: 1188px) {
+  .content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-inner {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    flex: 1;
+  }
 }
 
 .inner-column1 {
@@ -230,10 +319,121 @@ a {
   align-items: flex-start;
 }
 
+@media (max-width: 800px) {
+  .inner-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 .credit-cards {
   display: flex;
   gap: 30px;
   align-items: flex-start;
+}
+
+@media (max-width: 1188px) {
+  .credit-cards {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .credit-cards {
+    display: none;
+  }
+}
+
+.test-div {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+@media (min-width: 1188px) {
+  .test-div {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .test-div {
+    display: none;
+  }
+}
+
+@media (min-width: 1188px) {
+  .credit-card-1200 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .credit-card-1200 {
+    display: none;
+  }
+}
+
+.test-button {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  right: 0;
+  position: absolute;
+  border-radius: 100px;
+  background: var(--black-black-50, rgba(0, 0, 0, 0.5));
+  box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+}
+
+@media (min-width: 1188px) {
+  .test-button {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .test-button {
+    display: none;
+  }
+}
+
+.credit-card-360 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 800px) {
+  .credit-card-360 {
+    display: none;
+  }
+}
+
+.credit-cards-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.cardd.active::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #ff6633;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .credit-cards-column {
@@ -255,7 +455,6 @@ a {
   content: "";
   width: 2px;
   height: 40px;
-  flex-shrink: 0;
   background: #ff6633;
   position: absolute;
   top: 0;
@@ -265,13 +464,26 @@ a {
 
 .expenses {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  align-self: stretch;
-  border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+}
+
+@media (max-width: 800px) {
+  .expenses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
 
 .expenses-head {
@@ -296,23 +508,21 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  position: relative;
 }
 
-.expenses-navbar-item:hover {
+.expenses-navbar-item a:hover {
   color: #83f;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 20px;
 }
 
-.expenses-navbar-item:hover::after {
+.expenses-navbar-item a:hover::after {
   content: "";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid #83f;
+  bottom: -20px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background: #83f;
 }
 
 .expenses-content {
@@ -320,6 +530,23 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 44px;
+}
+
+@media (max-width: 1188px) {
+  .expenses-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .expenses-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
 }
 
 .expenses-buttons {
@@ -334,6 +561,21 @@ a {
 .row {
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 1188px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 .expenses-button {
@@ -359,7 +601,15 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  flex: 1 0 0;
+  width: 100%;
+}
+
+@media (max-width: 1188px) {
+  .inner-column2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .operation {
@@ -383,7 +633,6 @@ a {
   padding: 0px 15px;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
   border-bottom: 2px solid #f5f6f7;
   width: 100%;
   background-color: #fff;
@@ -395,24 +644,21 @@ a {
   font-size: 12px;
   font-weight: 900;
   line-height: 20px;
+  position: relative;
 }
 
-.oparation-navbar-item a:hover {
+.operation-navbar-item a:hover {
   color: #83f;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 20px;
 }
 
-.operation-navbar-item a:hover::after {
+.operation-navbar-item a:hover:after {
   content: "";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  border-bottom: 2px solid #83f;
+  bottom: -20px;
+  left: 0;
+  background: #83f;
+  position: absolute;
+  width: 100%;
+  height: 2px;
 }
 
 .operation-rows {
@@ -450,25 +696,41 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-grow: 1;
+  gap: 15px;
+}
+
+@media (max-width: 800px) {
+  .operation-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
 }
 
 .operation-amounts {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin: 0 0 auto auto;
+}
+
+@media (max-width: 800px) {
+  .opt-button {
+    display: none;
+  }
 }
 
 .operation-name {
   color: #7d8fb3;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 25px;
 }
 
 .operation-process {
   color: #4d5e80;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 25px;
 }
@@ -484,9 +746,15 @@ a {
   background: rgba(41, 204, 57, 0.05);
   color: #29cc39;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 900;
   line-height: 20px;
+}
+
+@media (max-width: 800px) {
+  .cashback {
+    display: none;
+  }
 }
 
 .badge {
@@ -500,7 +768,7 @@ a {
   background: #f7f8fa;
   color: #6b7a99;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 900;
   line-height: 20px;
 }
@@ -516,17 +784,31 @@ a {
   background: #fff;
 }
 
+@media (max-width: 800px) {
+  .empty {
+    display: none;
+  }
+}
+
 .info-boxes-line {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
 }
+
 .info-boxes-line-block {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .info-boxes-line-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .info-card {
@@ -540,6 +822,18 @@ a {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.05);
+}
+
+@media (max-width: 800px) {
+  .info-card {
+    max-width: 47%;
+  }
+}
+
+@media (max-width: 590px) {
+  .info-card {
+    max-width: 46%;
+  }
 }
 
 .info-card-name {
@@ -560,9 +854,6 @@ a {
   background: #fff;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.05);
 }
-.two-column {
-  grid-column: 3 / 5;
-}
 
 .transfer-card-name {
   color: #4d5e80;
@@ -578,6 +869,13 @@ a {
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  .transfer-organization {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .sidebar {
   display: flex;
   width: 100%;
@@ -591,7 +889,7 @@ a {
   border-left: 2px solid #edeff2;
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1518px) {
   .sidebar {
     position: fixed;
     top: 0;
